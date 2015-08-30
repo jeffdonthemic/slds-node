@@ -59,10 +59,11 @@
           <div class="slds-grid">
             <div class="slds-col--padded slds-size--1-of-2">
 
-              <div class="slds-form-element">
+              <div class="slds-form-element slds-is-required">
                 <label class="slds-form-element__label" for="name">Name</label>
                 <div class="slds-form-element__control">
-                  <input name="name" id="name" class="slds-input" type="text"/>
+                  <input name="name" id="name" class="slds-input" type="text" required/>
+                  <span id="nameHelp" class="slds-form-element__help">You must enter an account name.</span>
                 </div>
               </div>
 
@@ -84,51 +85,53 @@
 
             <div class="slds-col--padded slds-size--1-of-2">
 
-              <div class="slds-form-element">
+              <div class="slds-form-element slds-is-required">
                 <label class="slds-form-element__label" for="accountNumber">Account Number</label>
                 <div class="slds-form-element__control">
-                  <input name="accountNumber" id="accountNumber" class="slds-input" type="text"/>
+                  <input name="accountNumber" id="accountNumber" class="slds-input" type="text" required/>
+                  <span id="helpAccountNumber" class="slds-form-element__help">This field is required.</span>
                 </div>
               </div>
 
-              <fieldset class="slds-form-element">
+              <fieldset class="slds-form-element slds-is-required">
                 <legend class="slds-form-element__label slds-form-element__label--top">Type</legend>
                 <div class="slds-form-element__control">
                   <label class="slds-radio" for="prospect">
-                    <input type="radio" name="type" id="prospect" value="Prospect"/>
+                    <input type="radio" name="type" id="prospect" value="Prospect" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Prospect</span>
                   </label>
                   <label class="slds-radio" for="direct">
-                    <input type="radio" name="type" id="direct" value="Customer - Direct"/>
+                    <input type="radio" name="type" id="direct" value="Customer - Direct" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Customer - Direct</span>
                   </label>
                   <label class="slds-radio" for="channel">
-                    <input type="radio" name="type" id="channel" value="Customer - Channel"/>
+                    <input type="radio" name="type" id="channel" value="Customer - Channel" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Customer - Channel</span>
                   </label>
                   <label class="slds-radio" for="reseller">
-                    <input type="radio" name="type" id="reseller" value="Channel Partner / Reseller"/>
+                    <input type="radio" name="type" id="reseller" value="Channel Partner / Reseller" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Channel Partner / Reseller</span>
                   </label>
                   <label class="slds-radio" for="installation">
-                    <input type="radio" name="type" id="installation" value="Installation Partner"/>
+                    <input type="radio" name="type" id="installation" value="Installation Partner" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Installation Partner</span>
                   </label>
                   <label class="slds-radio" for="technology">
-                    <input type="radio" name="type" id="technology" value="Technology Partner"/>
+                    <input type="radio" name="type" id="technology" value="Technology Partner" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Technology Partner</span>
                   </label>
                   <label class="slds-radio" for="other">
-                    <input type="radio" name="type" id="other" value="Other"/>
+                    <input type="radio" name="type" id="other" value="Other" required/>
                     <span class="slds-radio--faux"></span>
                     <span class="slds-form-element__label">Other</span>
                   </label>
+                  <span id="helpType" class="slds-form-element__help">Ensure you choose the type of account.</span>
                 </div>
               </fieldset>
 
