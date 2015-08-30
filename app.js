@@ -47,6 +47,12 @@ hbs.registerHelper('isChecked', function(record, value) {
   return;
 });
 
+// register a helper for template to return a badge
+hbs.registerHelper('isSelected', function(record, value) {
+  if (record.get('Industry') === value) return 'selected';
+  return;
+});
+
 // register a helper for template format currency
 hbs.registerHelper('formatCurrency', function(record, field) {
   return numeral(record.get(field)).format('$0,0[.]00');

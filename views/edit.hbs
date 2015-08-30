@@ -68,12 +68,19 @@
               </div>
 
               <div class="slds-form-element">
-                <label class="slds-form-element__label" for="industry">Industry</label>
-                <div class="slds-form-element__control">
-                  <input name="industry" id="industry" class="slds-input" type="text" value="{{get record 'Industry'}}"/>
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="industry">Industry</label>
+                  <div class="slds-form-element__control">
+                    <select name="industry" id="industry" class="slds-select">
+                      <option {{isSelected record 'Agriculture'}}>Agriculture</option>
+                      <option {{isSelected record 'Apparel'}}>Apparel</option>
+                      <option {{isSelected record 'Banking'}}>Banking</option>
+                      <option {{isSelected record 'Biotechnology'}}>Biotechnology</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-
+              
             </div>
             <div class="slds-col--padded slds-size--1-of-2">
 
